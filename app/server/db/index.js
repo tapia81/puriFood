@@ -1,9 +1,7 @@
 const mongoose = require("mongoose");
 
 let MONGO_URI =
-  process.env.PROD_MONGODB ||
-  process.env.MONGO_URI ||
-  "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.hufat.mongodb.net/recipeData?retryWrites=true&w=majority";
+  process.env.PROD_MONGODB || process.env.MONGO_URI || "mongo URI";
 
 mongoose
   .connect(MONGO_URI, {
